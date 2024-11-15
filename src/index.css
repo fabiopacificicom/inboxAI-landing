@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body
+{
+  font-size: 18px;
+  font-family: 'Poppins', sans-serif;
+  height: 100dvh;
+}
+
+:root
+{
+  --inbox-ai-dark: #080125;
+  --inbox-ai-light: #ffffff;
+
+}
+
+.container
+{
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+
+  @media (min-width: 768px)
+  {
+    width: 80%;
+    max-width: 740px;
+  }
+
+  @media (min-width: 1200px)
+  {
+    width: 80%;
+    max-width: 992px;
+  }
+
+  @media (min-width: 1440px)
+  {
+    width: 80%;
+    max-width: 1200px;
+  }
+}
+
+
+header
+{
+
+
+  .notice
+  {
+    background-color: rgb(245, 105, 105);
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .logo
+  {
+    display: inline-flex;
+    margin-top: 1rem;
+    margin-left: 2rem;
+    padding: 0.25rem 1rem;
+    border-radius: 0.5rem;
+    align-items: center;
+    gap: 0.75rem;
+    background-color: var(--inbox-ai-dark);
+    color: var(--inbox-ai-light);
+
+  }
+}
+
+main
+{
+  min-height: calc(100dvh - 100px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+
+  .page_title,
+  .lead
+  {
+    text-align: center;
+  }
+
+  .page_title
+  {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .lead
+  {
+    font-size: 1.5rem;
+    margin: 1.5rem 0;
+  }
+
+
+  .platforms
+  {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-between;
+    max-width: 600px;
+    margin: auto;
+
+    &:hover
+    {
+      cursor: not-allowed;
+    }
+
+    h4
+    {
+      color: gray;
+
+    }
+
+    .desktop,
+    .mobile
+    {
+      margin-top: 1rem;
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+    }
+
+    .icon
+    {
+      .icon__image
+      {
+        background-color: lightgray;
+        text-align: center;
+        width: 40px;
+        aspect-ratio: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .icon__text
+      {
+        font-size: 10px;
+        text-align: center;
+        padding: 0.25rem 0;
+      }
+    }
+  }
+
+
+}
+
+footer
+{
+  text-align: end;
+  padding: 2rem;
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  width: fit-content;
+
+  a
+  {
+    text-decoration: none;
+    color: var(--inbox-ai-dark);
+    display: inline-flex;
+    gap: 0.5rem;
+
+    &:hover
+    {
+      color: var(--inbox-ai-light);
+      background-color: var(--inbox-ai-dark);
+      padding: .25rem;
+      border-radius: 0.25rem;
+    }
+  }
+}

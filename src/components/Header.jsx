@@ -17,8 +17,7 @@ export default function Header() {
           <li><Link to="/">Home</Link></li>
           <li><Link to="/docs">Docs</Link></li>
           <li>
-            <a target='_blank' href="https://github.com/fabiopacificicom/inboxAI" >
-              <span className='me-2'>Code</span>
+            <a target='_blank' href="https://github.com/fabiopacificicom/inboxAI">
               <i className="bi bi-github"></i>
             </a>
           </li>

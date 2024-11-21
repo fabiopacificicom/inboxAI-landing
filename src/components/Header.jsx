@@ -14,7 +14,7 @@ export default function Header() {
           <strong>Inbox AI</strong>
         </div>
         <ul>
-          <li><Link to="/">Home</Link></li>
+          <li className="d-none d-md-block"><Link to="/">Home</Link></li>
           <li><Link to="/docs">Docs</Link></li>
           <li>
             <a target='_blank' href="https://github.com/fabiopacificicom/inboxAI">

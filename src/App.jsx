@@ -1,16 +1,22 @@
-import Header from './components/Header'
-import Main from './components/Main'
-import Footer from './components/Footer'
-import "../node_modules/bootstrap-icons/font/bootstrap-icons.min.css"
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Layout from './pages/Layout'
+import Home from './pages/Home'
+import Docs from './pages/Docs'
+
 function App() {
 
   return (
 
     <>
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<Layout />}>
+            <Route index element={<Home />} />
+            <Route path='docs' element={<Docs />} />
 
-      <Header />
-      <Main />
-      <Footer />
+          </Route>
+        </Routes>
+      </BrowserRouter>
 
     </>
   )

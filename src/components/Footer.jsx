@@ -16,13 +16,13 @@ export default function Footer() {
           </div>
 
           <div className="col offset-md-4">
-            <h3 className='mb-3'>Quick Links</h3>
+            <h3 className='my-3'>Quick Links</h3>
             <ul style={{ listStyle: 'none' }}>
-              <li><Link to="/">Home </Link></li>
-              <li><Link to="/docs">Documentation </Link></li>
+              <li><i className="bi bi-link"></i><Link to="/">Home </Link></li>
+              <li><i className="bi bi-link"></i><Link to="/docs">Documentation </Link></li>
 
-              <li><a target='_blank' href="https://github.com/fabiopacificicom/inboxAI">Source Code <i className="bi bi-link"></i> </a></li>
-              <li><a target='_blank' href="https://github.com/fabiopacificicom/inboxAI/issues">Report a bug <i className="bi bi-link"></i></a></li>
+              <li><a target='_blank' href="https://github.com/fabiopacificicom/inboxAI"><i className="bi bi-link"></i> Source Code</a></li>
+              <li><a target='_blank' href="https://github.com/fabiopacificicom/inboxAI/issues"><i className="bi bi-link"></i> Report a bug</a></li>
 
             </ul>
           </div>

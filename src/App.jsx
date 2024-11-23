@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Layout from './pages/Layout'
 import Home from './pages/Home'
 import Docs from './pages/Docs'
+import NotFound from './pages/NotFound'
 
 function App() {
 
@@ -13,7 +14,7 @@ function App() {
           <Route path='/' element={<Layout />}>
             <Route index element={<Home />} />
             <Route path='docs' element={<Docs />} />
-            <Route path='*' element={<h1>Not Found</h1>} />
+            <Route path='*' element={<NotFound />} />
           </Route>
         </Routes>
       </BrowserRouter>

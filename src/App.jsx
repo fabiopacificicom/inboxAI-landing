@@ -8,12 +8,12 @@ function App() {
   return (
 
     <>
-      <BrowserRouter basename='' >
+      <BrowserRouter >
         <Routes>
           <Route path='/' element={<Layout />}>
             <Route index element={<Home />} />
             <Route path='docs' element={<Docs />} />
-
+            <Route path='*' element={<h1>Not Found</h1>} />
           </Route>
         </Routes>
       </BrowserRouter>
